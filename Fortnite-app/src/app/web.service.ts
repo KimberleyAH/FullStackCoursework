@@ -11,4 +11,10 @@ export class WebService {
     getRoster(){
         return this.http.get('http://localhost:5000/api/v1.0/roster').toPromise();
     }
+
+    getCharacter(id: any) {
+        return this.http.get(
+            'http://localhost:5000/api/v1.0/roster/' + id
+            ).toPromise();
+    }
 }

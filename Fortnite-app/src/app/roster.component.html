@@ -3,8 +3,11 @@
        <div class="col-sm-12">
           <div *ngFor = "let roster of roster_list">
             <div class ="card text-yellow bg-primary mb-3"
-                style ="cursor: pointer; width: 50rem; margin: auto">
-                <div class="card header">
+                style ="cursor: pointer; width: 50rem; margin: auto; cursor: pointer">
+                <div class="card-header">
+                    Character's available:
+                </div>
+                <div class="card-body">
                     This character is called:
                     {{roster.name}}
                 </div>

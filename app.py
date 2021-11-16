@@ -72,7 +72,7 @@ def show_full_roster():
     return make_response(jsonify(data_to_return), 200)
 
 @app.route("/api/v1.0/roster/<string:id>", methods=["GET"])
-@jwt_required
+#@jwt_required
 def show_one_character(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)

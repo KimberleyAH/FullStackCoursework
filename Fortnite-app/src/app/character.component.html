@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+       <div class="col-sm-12">
+           <div class ="card text-yellow bg-primary mb-3"
+                style ="width: 50rem; margin: auto; cursor: pointer"
+                [routerLink] = "['/roster', character._id]">
+                <div class="card header">
+                    This character is called:
+                    {{character.name}}
+                </div>
+                <div class="card-body">
+                    This character is
+                    {{ character.age }}
+                </div>
+                <div class="card-footer">
+                    This character has
+                    {{ character.victories}}
+                    victories
+                </div>
+            </div>
+       </div>
+       <!-- col -->
+    </div>
+    <!-- row -->
+ </div>
+ <!-- container -->

@@ -7,6 +7,7 @@ import { WebService } from './web.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
+import { CharacterComponent} from './character.component';
 
 var routes: any = [
   {
@@ -16,12 +17,16 @@ var routes: any = [
   {
     path: 'roster',
     component: RosterComponent
+  },
+  {
+    path: 'roster/:id',
+    component: CharacterComponent
   }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent, RosterComponent, HomeComponent
+    AppComponent, RosterComponent, HomeComponent, CharacterComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,
