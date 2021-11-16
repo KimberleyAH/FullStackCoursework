@@ -1,1 +1,1352 @@
-[{"name": "Banshee", "age": 29, "weapon": "Heavy Assault Rifle", "victories": 106, "rank": []}, {"name": "Carlos", "age": 36, "weapon": "Compact SMG", "victories": 8, "rank": []}, {"name": "Emmy", "age": 46, "weapon": "Machine Pistol", "victories": 95, "rank": []}, {"name": "Hector", "age": 43, "weapon": "Shadow Tracker", "victories": 106, "rank": []}, {"name": "Jonesy", "age": 46, "weapon": "Shadow Midas\u2019 Drum Gun", "victories": 69, "rank": []}, {"name": "Mansu", "age": 40, "weapon": "Heavy Sniper Rifle", "victories": 42, "rank": []}, {"name": "Ramirez", "age": 29, "weapon": "Stark Industries Energy Rifle", "victories": 37, "rank": []}, {"name": "Renegade", "age": 37, "weapon": "Hand Cannon", "victories": 58, "rank": []}, {"name": "Rio", "age": 50, "weapon": "Heavy Assault Rifle", "victories": 54, "rank": []}, {"name": "Spitfire", "age": 22, "weapon": "Tactical Assault Rifle", "victories": 73, "rank": []}, {"name": "Wildcat", "age": 49, "weapon": "Skye\u2019s Assault Rifle", "victories": 7, "rank": []}, {"name": "Anarchy Agent", "age": 34, "weapon": "Semi-Auto Sniper Rifle", "victories": 117, "rank": []}, {"name": "Armadillo", "age": 28, "weapon": "Rocket Launcher", "victories": 52, "rank": []}, {"name": "Assault Trooper", "age": 21, "weapon": "Infantry Rifle", "victories": 98, "rank": []}, {"name": "Aura", "age": 35, "weapon": "Tactical Shotgun", "victories": 102, "rank": []}, {"name": "B.R.U.T.E Gunner", "age": 32, "weapon": "Revolver", "victories": 16, "rank": []}, {"name": "B.R.U.T.E Navigator", "age": 41, "weapon": "Assault R\u0130fle", "victories": 84, "rank": []}, {"name": "Banner Trooper", "age": 19, "weapon": "Skye\u2019s Assault Rifle", "victories": 34, "rank": []}, {"name": "Birdie", "age": 33, "weapon": "Burst SMG", "victories": 112, "rank": []}, {"name": "Bolt", "age": 41, "weapon": "Tactical Submachine Gun", "victories": 49, "rank": []}, {"name": "Bracer", "age": 27, "weapon": "Guided Missile", "victories": 53, "rank": []}, {"name": "Brainiac", "age": 38, "weapon": "Proximity Grenade Launcher", "victories": 111, "rank": []}, {"name": "Branded Brawler", "age": 48, "weapon": "Amban Sniper Rifle", "victories": 12, "rank": []}, {"name": "Branded Brigadier", "age": 40, "weapon": "Drum Gun", "victories": 76, "rank": []}, {"name": "Bullseye", "age": 37, "weapon": "Shadow Tracker", "victories": 52, "rank": []}, {"name": "Bunnymoon", "age": 49, "weapon": "Minigun", "victories": 4, "rank": []}, {"name": "Cabbie", "age": 45, "weapon": "Tactical Submachine Gun", "victories": 110, "rank": []}, {"name": "Cole", "age": 31, "weapon": "Rapid Fire SMG", "victories": 6, "rank": []}, {"name": "Commando", "age": 32, "weapon": "Quad Launcher", "victories": 33, "rank": []}, {"name": "Crimson Scout", "age": 19, "weapon": "Machine Pistol", "victories": 92, "rank": []}, {"name": "Crystal", "age": 26, "weapon": "Scoped Revolver", "victories": 14, "rank": []}, {"name": "Desert Dominator", "age": 45, "weapon": "Stark Industries Energy Rifle", "victories": 78, "rank": []}, {"name": "Devastator", "age": 27, "weapon": "Lever Action Rifle", "victories": 97, "rank": []}, {"name": "Dominator", "age": 31, "weapon": "Deadpool\u2019s Hand Cannons", "victories": 26, "rank": []}, {"name": "Gage", "age": 35, "weapon": "Guided Missile", "victories": 44, "rank": []}, {"name": "Garrison", "age": 34, "weapon": "Quad Launcher", "victories": 3, "rank": []}, {"name": "Grill Sergeant", "age": 20, "weapon": "Suppressed Pistol", "victories": 100, "rank": []}, {"name": "Grit", "age": 25, "weapon": "Quad Launcher", "victories": 61, "rank": []}, {"name": "Guild", "age": 26, "weapon": "Deadpool\u2019s Hand Cannons", "victories": 109, "rank": []}, {"name": "Hard Charger", "age": 50, "weapon": "Pump Shotgun", "victories": 55, "rank": []}, {"name": "Hayseed", "age": 44, "weapon": "Double Barrel Shotgun", "victories": 108, "rank": []}, {"name": "Highrise Assault Trooper", "age": 40, "weapon": "Kit\u2019s Shockwave Launcher", "victories": 66, "rank": []}, {"name": "Jungle Scout", "age": 18, "weapon": "Common Bolt-Action Sniper Rifle", "victories": 56, "rank": []}, {"name": "King Flamingo", "age": 36, "weapon": "Dual Supressed Pistols", "victories": 14, "rank": []}, {"name": "Knockout", "age": 48, "weapon": "Rapid Fire SMG", "victories": 49, "rank": []}, {"name": "Liteshow", "age": 50, "weapon": "Pistol", "victories": 60, "rank": []}, {"name": "Lt. Logo", "age": 22, "weapon": "Heavy Shotgun", "victories": 112, "rank": []}, {"name": "Manic", "age": 43, "weapon": "Brutus's Minigun", "victories": 61, "rank": []}, {"name": "Marked Marauder", "age": 38, "weapon": "Proximity Grenade Launcher", "victories": 94, "rank": []}, {"name": "Munitions Major", "age": 43, "weapon": "Ocean\u2019s Burst Assault Rifle", "victories": 71, "rank": []}, {"name": "Nitelite", "age": 50, "weapon": "Tactical Assault Rifle", "victories": 45, "rank": []}, {"name": "Nog Ops", "age": 19, "weapon": "Pistol", "victories": 85, "rank": []}, {"name": "Pastel", "age": 42, "weapon": "Storm Scout Sniper Rifle", "victories": 27, "rank": []}, {"name": "Patch Patroller", "age": 39, "weapon": "Meowscles\u2019 Peow Peow Rifle", "victories": 90, "rank": []}, {"name": "Pathfinder", "age": 22, "weapon": "Scoped Assault Rifle", "victories": 73, "rank": []}, {"name": "Plastic Patroller", "age": 24, "weapon": "Grenade Launcher", "victories": 101, "rank": []}, {"name": "Prickly Patroller", "age": 37, "weapon": "Ocean\u2019s Burst Assault Rifle", "victories": 18, "rank": []}, {"name": "Ranger", "age": 22, "weapon": "Heavy Assault Rifle", "victories": 38, "rank": []}, {"name": "Razor", "age": 38, "weapon": "Drum Gun", "victories": 42, "rank": []}, {"name": "Recon Ranger", "age": 40, "weapon": "Amban Sniper Rifle", "victories": 31, "rank": []}, {"name": "Red Jade", "age": 18, "weapon": "Rapid Fire SMG", "victories": 52, "rank": []}, {"name": "Red-Nosed Ranger", "age": 27, "weapon": "Assault R\u0130fle", "victories": 37, "rank": []}, {"name": "Relay", "age": 18, "weapon": "Submachine Gun", "victories": 11, "rank": []}, {"name": "Scarlet Defender", "age": 30, "weapon": "Suppressed Pistol", "victories": 82, "rank": []}, {"name": "Scorpion", "age": 28, "weapon": "Double Barrel Shotgun", "victories": 120, "rank": []}, {"name": "Scout", "age": 28, "weapon": "Guided Missile", "victories": 114, "rank": []}, {"name": "Sgt. Green Clover", "age": 38, "weapon": "Amban Sniper Rifle", "victories": 8, "rank": []}, {"name": "Sgt. Sigil", "age": 41, "weapon": "Burst Assault Rifle", "victories": 112, "rank": []}, {"name": "Signature Sniper", "age": 26, "weapon": "Suppressed Sniper Rifle", "victories": 30, "rank": []}, {"name": "Sizzle Sgt.", "age": 36, "weapon": "Combat Shotgun", "victories": 7, "rank": []}, {"name": "Slingshot", "age": 26, "weapon": "Guided Missile", "victories": 9, "rank": []}, {"name": "Snakepit", "age": 19, "weapon": "Proximity Grenade Launcher", "victories": 61, "rank": []}, {"name": "Star-Spangled Ranger", "age": 20, "weapon": "Scoped Assault Rifle", "victories": 31, "rank": []}, {"name": "Star-Spangled Trooper", "age": 44, "weapon": "Quad Launcher", "victories": 61, "rank": []}, {"name": "Striped Soldier", "age": 49, "weapon": "Amban Sniper Rifle", "victories": 89, "rank": []}, {"name": "Sunflower", "age": 33, "weapon": "Shadow Midas\u2019 Drum Gun", "victories": 20, "rank": []}, {"name": "Sureshot", "age": 33, "weapon": "Combat Shotgun", "victories": 47, "rank": []}, {"name": "Swamp Stalker", "age": 31, "weapon": "Ocean\u2019s Burst Assault Rifle", "victories": 9, "rank": []}, {"name": "Symbol Stalwart", "age": 26, "weapon": "Suppressed Submachine Gun", "victories": 21, "rank": []}, {"name": "Tactics Officer", "age": 27, "weapon": "Tactical Assault Rifle", "victories": 45, "rank": []}, {"name": "Tinseltoes", "age": 22, "weapon": "Snowball Launcher", "victories": 52, "rank": []}, {"name": "Tower Recon Specialist", "age": 32, "weapon": "Revolver", "victories": 103, "rank": []}, {"name": "Toy Trooper", "age": 34, "weapon": "Combat Shotgun", "victories": 13, "rank": []}, {"name": "Tracker", "age": 29, "weapon": "Suppressed Sniper Rifle", "victories": 48, "rank": []}, {"name": "Trooper", "age": 21, "weapon": "Scoped Assault Rifle", "victories": 116, "rank": []}, {"name": "Verge", "age": 36, "weapon": "Suppressed Sniper Rifle", "victories": 85, "rank": []}, {"name": "Vice", "age": 24, "weapon": "Infantry Rifle", "victories": 70, "rank": []}, {"name": "Whiplash", "age": 43, "weapon": "Skye\u2019s Assault Rifle", "victories": 1, "rank": []}, {"name": "Whistle Warrior", "age": 24, "weapon": "Pistol", "victories": 26, "rank": []}, {"name": "World Warrior", "age": 25, "weapon": "Revolver", "victories": 81, "rank": []}, {"name": "Absolute Zero", "age": 25, "weapon": "Amban Sniper Rifle", "victories": 54, "rank": []}, {"name": "Aerial Assault Trooper", "age": 50, "weapon": "Scoped Assault Rifle", "victories": 93, "rank": []}, {"name": "Aerial Threat", "age": 35, "weapon": "Six Shooter", "victories": 17, "rank": []}, {"name": "Aeronaut", "age": 33, "weapon": "Submachine Gun", "victories": 38, "rank": []}, {"name": "Airheart", "age": 30, "weapon": "Egg Launcher", "victories": 80, "rank": []}, {"name": "Arctic Assassin", "age": 33, "weapon": "Minigun", "victories": 112, "rank": []}, {"name": "Asmodeus", "age": 26, "weapon": "Combat Shotgun", "victories": 105, "rank": []}, {"name": "Axiom", "age": 30, "weapon": "Amban Sniper Rifle", "victories": 96, "rank": []}, {"name": "Bachii", "age": 25, "weapon": "Scoped Revolver", "victories": 26, "rank": []}, {"name": "Backbone", "age": 35, "weapon": "Lever Action Rifle", "victories": 22, "rank": []}, {"name": "Bandolette", "age": 28, "weapon": "Brutus's Minigun", "victories": 38, "rank": []}, {"name": "Beach Bomber", "age": 46, "weapon": "Storm Scout Sniper Rifle", "victories": 101, "rank": []}, {"name": "Bendie", "age": 36, "weapon": "Dual Pistols", "victories": 51, "rank": []}, {"name": "Bigfoot", "age": 18, "weapon": "Meowscles\u2019 Peow Peow Rifle", "victories": 37, "rank": []}, {"name": "Biz", "age": 20, "weapon": "Tactical Submachine Gun", "victories": 44, "rank": []}, {"name": "Blue Squire", "age": 25, "weapon": "Kit\u2019s Shockwave Launcher", "victories": 32, "rank": []}, {"name": "Blue Team Leader", "age": 33, "weapon": "Amban Sniper Rifle", "victories": 68, "rank": []}, {"name": "Bravo Leader", "age": 37, "weapon": "Pistol", "victories": 16, "rank": []}, {"name": "Brawler", "age": 43, "weapon": "Skye\u2019s Assault Rifle", "victories": 16, "rank": []}, {"name": "Breakpoint", "age": 26, "weapon": "Double Barrel Shotgun", "victories": 78, "rank": []}, {"name": "Brilliant Bomber", "age": 18, "weapon": "Lever Action Shotgun", "victories": 12, "rank": []}, {"name": "Brilliant Striker", "age": 18, "weapon": "Burst SMG", "victories": 87, "rank": []}, {"name": "Brite Blaster", "age": 50, "weapon": "Automatic Sniper Rifle", "victories": 119, "rank": []}, {"name": "Brite Bomber", "age": 49, "weapon": "Stark Industries Energy Rifle", "victories": 35, "rank": []}, {"name": "Bronto", "age": 30, "weapon": "Brutus's Minigun", "victories": 38, "rank": []}, {"name": "Bubble Bomber", "age": 46, "weapon": "Drum Shotgun", "victories": 47, "rank": []}, {"name": "Bundles", "age": 34, "weapon": "Grenade Launcher", "victories": 83, "rank": []}, {"name": "Burial Threat", "age": 42, "weapon": "Shadow Tracker", "victories": 107, "rank": []}, {"name": "Bushranger", "age": 33, "weapon": "Kit\u2019s Shockwave Launcher", "victories": 22, "rank": []}, {"name": "Callisto", "age": 31, "weapon": "Light Machine Gun", "victories": 20, "rank": []}, {"name": "Carbon Commando", "age": 25, "weapon": "Machine Pistol", "victories": 39, "rank": []}, {"name": "Catastrophe", "age": 42, "weapon": "Dual Pistols", "victories": 35, "rank": []}, {"name": "Chopper", "age": 42, "weapon": "Kit\u2019s Shockwave Launcher", "victories": 70, "rank": []}, {"name": "Chromium", "age": 22, "weapon": "Egg Launcher", "victories": 96, "rank": []}, {"name": "Cipher", "age": 29, "weapon": "Burst SMG", "victories": 39, "rank": []}, {"name": "Circuit Breaker", "age": 37, "weapon": "Midas\u2019 Drum GunJules\u2019 Drum Gun", "victories": 28, "rank": []}, {"name": "Clinical Crosser", "age": 30, "weapon": "Tactical Shotgun", "victories": 63, "rank": []}, {"name": "Cloudbreaker", "age": 28, "weapon": "Tactical Submachine Gun", "victories": 19, "rank": []}, {"name": "Codename E.L.F.", "age": 48, "weapon": "Egg Launcher", "victories": 76, "rank": []}, {"name": "Crypt Crosser", "age": 45, "weapon": "Tactical Assault Rifle", "victories": 57, "rank": []}, {"name": "Cryptic", "age": 48, "weapon": "Stark Industries Energy Rifle", "victories": 111, "rank": []}, {"name": "Danger Zone", "age": 26, "weapon": "Hand Cannon", "victories": 18, "rank": []}, {"name": "Dare", "age": 26, "weapon": "Dual Supressed Pistols", "victories": 42, "rank": []}, {"name": "Dazzle", "age": 38, "weapon": "Minigun", "victories": 95, "rank": []}, {"name": "Decaying Dribbler", "age": 40, "weapon": "Meowscles\u2019 Peow Peow Rifle", "victories": 91, "rank": []}, {"name": "Demogorgon", "age": 33, "weapon": "Hunting Rifle", "victories": 26, "rank": []}, {"name": "Depth Dealer", "age": 47, "weapon": "Proximity Grenade Launcher", "victories": 38, "rank": []}, {"name": "Desperado", "age": 25, "weapon": "Lever Action Rifle", "victories": 100, "rank": []}, {"name": "Diecast", "age": 44, "weapon": "Lever Action Shotgun", "victories": 100, "rank": []}, {"name": "Disco Diva", "age": 30, "weapon": "Submachine Gun", "victories": 53, "rank": []}, {"name": "Doublecross", "age": 34, "weapon": "Compact SMG", "victories": 56, "rank": []}, {"name": "Dream", "age": 24, "weapon": "Scoped Assault Rifle", "victories": 95, "rank": []}, {"name": "Dynamic Dribbler", "age": 42, "weapon": "Lever Action Shotgun", "victories": 105, "rank": []}, {"name": "Dynamo", "age": 36, "weapon": "Rocket Launcher", "victories": 37, "rank": []}, {"name": "Facet", "age": 22, "weapon": "Revolver", "victories": 30, "rank": []}, {"name": "Fastball", "age": 46, "weapon": "Six Shooter", "victories": 89, "rank": []}, {"name": "Fatal Finisher", "age": 19, "weapon": "Submachine Gun", "victories": 59, "rank": []}, {"name": "Fennix", "age": 36, "weapon": "Skye\u2019s Assault Rifle", "victories": 117, "rank": []}, {"name": "Finesse Finisher", "age": 30, "weapon": "Pistol", "victories": 105, "rank": []}, {"name": "Firewalker", "age": 45, "weapon": "Suppressed Sniper Rifle", "victories": 109, "rank": []}]
+[
+    {
+       "name":"Banshee",
+       "age":29,
+       "weapon":"Heavy Assault Rifle",
+       "victories":106,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Carlos",
+       "age":36,
+       "weapon":"Compact SMG",
+       "victories":8,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Emmy",
+       "age":46,
+       "weapon":"Machine Pistol",
+       "victories":95,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Hector",
+       "age":43,
+       "weapon":"Shadow Tracker",
+       "victories":106,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Jonesy",
+       "age":46,
+       "weapon":"Shadow Midas\u2019 Drum Gun",
+       "victories":69,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Mansu",
+       "age":40,
+       "weapon":"Heavy Sniper Rifle",
+       "victories":42,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Ramirez",
+       "age":29,
+       "weapon":"Stark Industries Energy Rifle",
+       "victories":37,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Renegade",
+       "age":37,
+       "weapon":"Hand Cannon",
+       "victories":58,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Rio",
+       "age":50,
+       "weapon":"Heavy Assault Rifle",
+       "victories":54,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Spitfire",
+       "age":22,
+       "weapon":"Tactical Assault Rifle",
+       "victories":73,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Wildcat",
+       "age":49,
+       "weapon":"Skye\u2019s Assault Rifle",
+       "victories":7,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Anarchy Agent",
+       "age":34,
+       "weapon":"Semi-Auto Sniper Rifle",
+       "victories":117,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Armadillo",
+       "age":28,
+       "weapon":"Rocket Launcher",
+       "victories":52,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Assault Trooper",
+       "age":21,
+       "weapon":"Infantry Rifle",
+       "victories":98,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Aura",
+       "age":35,
+       "weapon":"Tactical Shotgun",
+       "victories":102,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"B.R.U.T.E Gunner",
+       "age":32,
+       "weapon":"Revolver",
+       "victories":16,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"B.R.U.T.E Navigator",
+       "age":41,
+       "weapon":"Assault R\u0130fle",
+       "victories":84,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Banner Trooper",
+       "age":19,
+       "weapon":"Skye\u2019s Assault Rifle",
+       "victories":34,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Birdie",
+       "age":33,
+       "weapon":"Burst SMG",
+       "victories":112,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bolt",
+       "age":41,
+       "weapon":"Tactical Submachine Gun",
+       "victories":49,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bracer",
+       "age":27,
+       "weapon":"Guided Missile",
+       "victories":53,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Brainiac",
+       "age":38,
+       "weapon":"Proximity Grenade Launcher",
+       "victories":111,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Branded Brawler",
+       "age":48,
+       "weapon":"Amban Sniper Rifle",
+       "victories":12,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Branded Brigadier",
+       "age":40,
+       "weapon":"Drum Gun",
+       "victories":76,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bullseye",
+       "age":37,
+       "weapon":"Shadow Tracker",
+       "victories":52,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bunnymoon",
+       "age":49,
+       "weapon":"Minigun",
+       "victories":4,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Cabbie",
+       "age":45,
+       "weapon":"Tactical Submachine Gun",
+       "victories":110,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Cole",
+       "age":31,
+       "weapon":"Rapid Fire SMG",
+       "victories":6,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Commando",
+       "age":32,
+       "weapon":"Quad Launcher",
+       "victories":33,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Crimson Scout",
+       "age":19,
+       "weapon":"Machine Pistol",
+       "victories":92,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Crystal",
+       "age":26,
+       "weapon":"Scoped Revolver",
+       "victories":14,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Desert Dominator",
+       "age":45,
+       "weapon":"Stark Industries Energy Rifle",
+       "victories":78,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Devastator",
+       "age":27,
+       "weapon":"Lever Action Rifle",
+       "victories":97,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Dominator",
+       "age":31,
+       "weapon":"Deadpool\u2019s Hand Cannons",
+       "victories":26,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Gage",
+       "age":35,
+       "weapon":"Guided Missile",
+       "victories":44,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Garrison",
+       "age":34,
+       "weapon":"Quad Launcher",
+       "victories":3,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Grill Sergeant",
+       "age":20,
+       "weapon":"Suppressed Pistol",
+       "victories":100,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Grit",
+       "age":25,
+       "weapon":"Quad Launcher",
+       "victories":61,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Guild",
+       "age":26,
+       "weapon":"Deadpool\u2019s Hand Cannons",
+       "victories":109,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Hard Charger",
+       "age":50,
+       "weapon":"Pump Shotgun",
+       "victories":55,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Hayseed",
+       "age":44,
+       "weapon":"Double Barrel Shotgun",
+       "victories":108,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Highrise Assault Trooper",
+       "age":40,
+       "weapon":"Kit\u2019s Shockwave Launcher",
+       "victories":66,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Jungle Scout",
+       "age":18,
+       "weapon":"Common Bolt-Action Sniper Rifle",
+       "victories":56,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"King Flamingo",
+       "age":36,
+       "weapon":"Dual Supressed Pistols",
+       "victories":14,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Knockout",
+       "age":48,
+       "weapon":"Rapid Fire SMG",
+       "victories":49,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Liteshow",
+       "age":50,
+       "weapon":"Pistol",
+       "victories":60,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Lt. Logo",
+       "age":22,
+       "weapon":"Heavy Shotgun",
+       "victories":112,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Manic",
+       "age":43,
+       "weapon":"Brutus's Minigun",
+       "victories":61,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Marked Marauder",
+       "age":38,
+       "weapon":"Proximity Grenade Launcher",
+       "victories":94,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Munitions Major",
+       "age":43,
+       "weapon":"Ocean\u2019s Burst Assault Rifle",
+       "victories":71,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Nitelite",
+       "age":50,
+       "weapon":"Tactical Assault Rifle",
+       "victories":45,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Nog Ops",
+       "age":19,
+       "weapon":"Pistol",
+       "victories":85,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Pastel",
+       "age":42,
+       "weapon":"Storm Scout Sniper Rifle",
+       "victories":27,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Patch Patroller",
+       "age":39,
+       "weapon":"Meowscles\u2019 Peow Peow Rifle",
+       "victories":90,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Pathfinder",
+       "age":22,
+       "weapon":"Scoped Assault Rifle",
+       "victories":73,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Plastic Patroller",
+       "age":24,
+       "weapon":"Grenade Launcher",
+       "victories":101,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Prickly Patroller",
+       "age":37,
+       "weapon":"Ocean\u2019s Burst Assault Rifle",
+       "victories":18,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Ranger",
+       "age":22,
+       "weapon":"Heavy Assault Rifle",
+       "victories":38,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Razor",
+       "age":38,
+       "weapon":"Drum Gun",
+       "victories":42,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Recon Ranger",
+       "age":40,
+       "weapon":"Amban Sniper Rifle",
+       "victories":31,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Red Jade",
+       "age":18,
+       "weapon":"Rapid Fire SMG",
+       "victories":52,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Red-Nosed Ranger",
+       "age":27,
+       "weapon":"Assault R\u0130fle",
+       "victories":37,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Relay",
+       "age":18,
+       "weapon":"Submachine Gun",
+       "victories":11,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Scarlet Defender",
+       "age":30,
+       "weapon":"Suppressed Pistol",
+       "victories":82,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Scorpion",
+       "age":28,
+       "weapon":"Double Barrel Shotgun",
+       "victories":120,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Scout",
+       "age":28,
+       "weapon":"Guided Missile",
+       "victories":114,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Sgt. Green Clover",
+       "age":38,
+       "weapon":"Amban Sniper Rifle",
+       "victories":8,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Sgt. Sigil",
+       "age":41,
+       "weapon":"Burst Assault Rifle",
+       "victories":112,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Signature Sniper",
+       "age":26,
+       "weapon":"Suppressed Sniper Rifle",
+       "victories":30,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Sizzle Sgt.",
+       "age":36,
+       "weapon":"Combat Shotgun",
+       "victories":7,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Slingshot",
+       "age":26,
+       "weapon":"Guided Missile",
+       "victories":9,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Snakepit",
+       "age":19,
+       "weapon":"Proximity Grenade Launcher",
+       "victories":61,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Star-Spangled Ranger",
+       "age":20,
+       "weapon":"Scoped Assault Rifle",
+       "victories":31,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Star-Spangled Trooper",
+       "age":44,
+       "weapon":"Quad Launcher",
+       "victories":61,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Striped Soldier",
+       "age":49,
+       "weapon":"Amban Sniper Rifle",
+       "victories":89,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Sunflower",
+       "age":33,
+       "weapon":"Shadow Midas\u2019 Drum Gun",
+       "victories":20,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Sureshot",
+       "age":33,
+       "weapon":"Combat Shotgun",
+       "victories":47,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Swamp Stalker",
+       "age":31,
+       "weapon":"Ocean\u2019s Burst Assault Rifle",
+       "victories":9,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Symbol Stalwart",
+       "age":26,
+       "weapon":"Suppressed Submachine Gun",
+       "victories":21,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Tactics Officer",
+       "age":27,
+       "weapon":"Tactical Assault Rifle",
+       "victories":45,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Tinseltoes",
+       "age":22,
+       "weapon":"Snowball Launcher",
+       "victories":52,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Tower Recon Specialist",
+       "age":32,
+       "weapon":"Revolver",
+       "victories":103,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Toy Trooper",
+       "age":34,
+       "weapon":"Combat Shotgun",
+       "victories":13,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Tracker",
+       "age":29,
+       "weapon":"Suppressed Sniper Rifle",
+       "victories":48,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Trooper",
+       "age":21,
+       "weapon":"Scoped Assault Rifle",
+       "victories":116,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Verge",
+       "age":36,
+       "weapon":"Suppressed Sniper Rifle",
+       "victories":85,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Vice",
+       "age":24,
+       "weapon":"Infantry Rifle",
+       "victories":70,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Whiplash",
+       "age":43,
+       "weapon":"Skye\u2019s Assault Rifle",
+       "victories":1,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Whistle Warrior",
+       "age":24,
+       "weapon":"Pistol",
+       "victories":26,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"World Warrior",
+       "age":25,
+       "weapon":"Revolver",
+       "victories":81,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Absolute Zero",
+       "age":25,
+       "weapon":"Amban Sniper Rifle",
+       "victories":54,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Aerial Assault Trooper",
+       "age":50,
+       "weapon":"Scoped Assault Rifle",
+       "victories":93,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Aerial Threat",
+       "age":35,
+       "weapon":"Six Shooter",
+       "victories":17,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Aeronaut",
+       "age":33,
+       "weapon":"Submachine Gun",
+       "victories":38,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Airheart",
+       "age":30,
+       "weapon":"Egg Launcher",
+       "victories":80,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Arctic Assassin",
+       "age":33,
+       "weapon":"Minigun",
+       "victories":112,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Asmodeus",
+       "age":26,
+       "weapon":"Combat Shotgun",
+       "victories":105,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Axiom",
+       "age":30,
+       "weapon":"Amban Sniper Rifle",
+       "victories":96,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bachii",
+       "age":25,
+       "weapon":"Scoped Revolver",
+       "victories":26,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Backbone",
+       "age":35,
+       "weapon":"Lever Action Rifle",
+       "victories":22,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bandolette",
+       "age":28,
+       "weapon":"Brutus's Minigun",
+       "victories":38,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Beach Bomber",
+       "age":46,
+       "weapon":"Storm Scout Sniper Rifle",
+       "victories":101,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bendie",
+       "age":36,
+       "weapon":"Dual Pistols",
+       "victories":51,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bigfoot",
+       "age":18,
+       "weapon":"Meowscles\u2019 Peow Peow Rifle",
+       "victories":37,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Biz",
+       "age":20,
+       "weapon":"Tactical Submachine Gun",
+       "victories":44,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Blue Squire",
+       "age":25,
+       "weapon":"Kit\u2019s Shockwave Launcher",
+       "victories":32,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Blue Team Leader",
+       "age":33,
+       "weapon":"Amban Sniper Rifle",
+       "victories":68,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bravo Leader",
+       "age":37,
+       "weapon":"Pistol",
+       "victories":16,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Brawler",
+       "age":43,
+       "weapon":"Skye\u2019s Assault Rifle",
+       "victories":16,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Breakpoint",
+       "age":26,
+       "weapon":"Double Barrel Shotgun",
+       "victories":78,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Brilliant Bomber",
+       "age":18,
+       "weapon":"Lever Action Shotgun",
+       "victories":12,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Brilliant Striker",
+       "age":18,
+       "weapon":"Burst SMG",
+       "victories":87,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Brite Blaster",
+       "age":50,
+       "weapon":"Automatic Sniper Rifle",
+       "victories":119,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Brite Bomber",
+       "age":49,
+       "weapon":"Stark Industries Energy Rifle",
+       "victories":35,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bronto",
+       "age":30,
+       "weapon":"Brutus's Minigun",
+       "victories":38,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bubble Bomber",
+       "age":46,
+       "weapon":"Drum Shotgun",
+       "victories":47,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bundles",
+       "age":34,
+       "weapon":"Grenade Launcher",
+       "victories":83,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Burial Threat",
+       "age":42,
+       "weapon":"Shadow Tracker",
+       "victories":107,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Bushranger",
+       "age":33,
+       "weapon":"Kit\u2019s Shockwave Launcher",
+       "victories":22,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Callisto",
+       "age":31,
+       "weapon":"Light Machine Gun",
+       "victories":20,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Carbon Commando",
+       "age":25,
+       "weapon":"Machine Pistol",
+       "victories":39,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Catastrophe",
+       "age":42,
+       "weapon":"Dual Pistols",
+       "victories":35,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Chopper",
+       "age":42,
+       "weapon":"Kit\u2019s Shockwave Launcher",
+       "victories":70,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Chromium",
+       "age":22,
+       "weapon":"Egg Launcher",
+       "victories":96,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Cipher",
+       "age":29,
+       "weapon":"Burst SMG",
+       "victories":39,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Circuit Breaker",
+       "age":37,
+       "weapon":"Midas\u2019 Drum GunJules\u2019 Drum Gun",
+       "victories":28,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Clinical Crosser",
+       "age":30,
+       "weapon":"Tactical Shotgun",
+       "victories":63,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Cloudbreaker",
+       "age":28,
+       "weapon":"Tactical Submachine Gun",
+       "victories":19,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Codename E.L.F.",
+       "age":48,
+       "weapon":"Egg Launcher",
+       "victories":76,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Crypt Crosser",
+       "age":45,
+       "weapon":"Tactical Assault Rifle",
+       "victories":57,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Cryptic",
+       "age":48,
+       "weapon":"Stark Industries Energy Rifle",
+       "victories":111,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Danger Zone",
+       "age":26,
+       "weapon":"Hand Cannon",
+       "victories":18,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Dare",
+       "age":26,
+       "weapon":"Dual Supressed Pistols",
+       "victories":42,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Dazzle",
+       "age":38,
+       "weapon":"Minigun",
+       "victories":95,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Decaying Dribbler",
+       "age":40,
+       "weapon":"Meowscles\u2019 Peow Peow Rifle",
+       "victories":91,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Demogorgon",
+       "age":33,
+       "weapon":"Hunting Rifle",
+       "victories":26,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Depth Dealer",
+       "age":47,
+       "weapon":"Proximity Grenade Launcher",
+       "victories":38,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Desperado",
+       "age":25,
+       "weapon":"Lever Action Rifle",
+       "victories":100,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Diecast",
+       "age":44,
+       "weapon":"Lever Action Shotgun",
+       "victories":100,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Disco Diva",
+       "age":30,
+       "weapon":"Submachine Gun",
+       "victories":53,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Doublecross",
+       "age":34,
+       "weapon":"Compact SMG",
+       "victories":56,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Dream",
+       "age":24,
+       "weapon":"Scoped Assault Rifle",
+       "victories":95,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Dynamic Dribbler",
+       "age":42,
+       "weapon":"Lever Action Shotgun",
+       "victories":105,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Dynamo",
+       "age":36,
+       "weapon":"Rocket Launcher",
+       "victories":37,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Facet",
+       "age":22,
+       "weapon":"Revolver",
+       "victories":30,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Fastball",
+       "age":46,
+       "weapon":"Six Shooter",
+       "victories":89,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Fatal Finisher",
+       "age":19,
+       "weapon":"Submachine Gun",
+       "victories":59,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Fennix",
+       "age":36,
+       "weapon":"Skye\u2019s Assault Rifle",
+       "victories":117,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Finesse Finisher",
+       "age":30,
+       "weapon":"Pistol",
+       "victories":105,
+       "rank":[
+          
+       ]
+    },
+    {
+       "name":"Firewalker",
+       "age":45,
+       "weapon":"Suppressed Sniper Rifle",
+       "victories":109,
+       "rank":[
+          
+       ]
+    }
+ ]

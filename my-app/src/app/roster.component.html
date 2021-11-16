@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+       <div class="col-sm-12">
+          <div *ngFor = "let roster of roster_list">
+            <div class="card text-yellow bg-primary mb-3"
+                style="cursor: pointer; width: 50rem; margin: auto">
+                <div class="card header">
+                    This character is called:
+                    {{roster.name}}
+                </div>
+                <div class="card-body">
+                    This character is
+                    {{ roster.age }}
+                </div>
+                <div class="card-footer">
+                    This character has
+                    {{ roster.victories}}
+                    victories
+                </div>
+             </div>
+          </div>
+       </div>
+       <!-- col -->
+    </div>
+    <!-- row -->
+ </div>
+ <!-- container -->

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CharactersComponent } from './characters.component';
+import { RosterComponent } from './roster.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,5 @@ import { CharactersComponent } from './characters.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Fortnite Character Generator';
+  title = 'Fortnite Roster';
 }

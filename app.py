@@ -6,8 +6,10 @@ import datetime
 from functools import wraps
 import bcrypt
 import string
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 app.config['SECRET_KEY'] = 'mysecret'
 

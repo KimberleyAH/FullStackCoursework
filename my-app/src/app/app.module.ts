@@ -3,17 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CharactersComponent } from './characters.component';
+import { RosterComponent } from './roster.component';
+import { WebService } from './web.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent, CharactersComponent
+    AppComponent, RosterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [WebService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
