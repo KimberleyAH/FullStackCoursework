@@ -8,13 +8,30 @@ import { WebService } from './web.service';
 })
 export class CharactersComponent {
 
-  constructor(private webService: WebService) {}
+  constructor(public webService: WebService) {}
 
-  async ngOnInit() {
-    var response = await this.webService.getCharacters();
-    this.characters_list = response;
+    ngOnInit() {
+      if (sessionStorage['page']) {
+        this.page = Number(sessionStorage['page']);
+      }
+    this.character_list = this.webService.getCharacters(this.page);
   }
 
-  characters_list: any;
+  previousPage() {
+    if (this.page > 1) {
+      this.page = this.page -1;
+      sessionStorage['page'] = this.page;
+      this.character_list = this.webService.getCharacters(this.page);
+    }
+  }
+
+  nextPage() {
+    this.page = this.page + 1;
+    sessionStorage['page'] = this.page;
+    this.character_list = this.webService.getCharacters(this.page);
+  }
+
+  character_list: any = [];
+  page: number = 1;
 
 }
