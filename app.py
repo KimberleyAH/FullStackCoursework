@@ -15,7 +15,7 @@ app.config['SECRET_KEY'] = 'mysecret'
 
 client = MongoClient("mongodb://127.0.0.1:27017")
 db = client.fortniteDB  # update the database
-roster = db.fortnite  # update the collection name
+characters = db.fortnite  # update the collection name
 personnel = db.personnel #define handle to use list of personnel collection
 blacklist = db.blacklist #define handle to use blacklist token collection
 
@@ -54,8 +54,8 @@ def admin_required(func):
     return admin_required_wrapper
 
 # application functionality will go here
-@app.route("/api/v1.0/roster", methods=["GET"])
-def show_full_roster():
+@app.route("/api/v1.0/characters", methods=["GET"])
+def show_all_characters():
     page_num, page_size = 1, 10
     if request.args.get('pn'):
         page_num = int(request.args.get('pn'))
@@ -64,19 +64,19 @@ def show_full_roster():
     page_start = (page_size * (page_num - 1))
 
     data_to_return = []
-    for character in roster.find().skip(page_start).limit(page_size):
+    for character in characters.find().skip(page_start).limit(page_size):
         character['_id'] = str(character['_id'])
         for rank in character['rank']:
             rank['_id'] = str(rank['_id'])
         data_to_return.append(character)
     return make_response(jsonify(data_to_return), 200)
 
-@app.route("/api/v1.0/roster/<string:id>", methods=["GET"])
+@app.route("/api/v1.0/characters/<string:id>", methods=["GET"])
 #@jwt_required
 def show_one_character(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
-    character = roster.find_one({'_id': ObjectId(id)})
+    character = characters.find_one({'_id': ObjectId(id)})
     if character is not None:
         character['_id'] = str(character['_id'])
         for rank in character['rank']:
@@ -85,7 +85,7 @@ def show_one_character(id):
     else:
         return make_response(jsonify({"error": "Invalid character ID"}), 404)
 
-@app.route("/api/v1.0/roster", methods=["POST"])
+@app.route("/api/v1.0/characters", methods=["POST"])
 def add_a_character():
     if "name" in request.form and "age" in request.form and "weapon" in request.form and "victories" in request.form:
         new_character = {
@@ -95,44 +95,44 @@ def add_a_character():
             "victories": request.form["victories"],
             "rank": []
         }
-        new_character_id = roster.insert_one(new_character)
-        new_character_link = "http://localhost:5000/api/v1.0/roster/" + str(new_character_id.inserted_id)
+        new_character_id = characters.insert_one(new_character)
+        new_character_link = "http://localhost:5000/api/v1.0/characters/" + str(new_character_id.inserted_id)
         return make_response(jsonify({"url": new_character_link}), 201)
     else:
         return make_response(jsonify({"error": "Missing form data"}), 404)
 
-@app.route("/api/v1.0/roster/<string:id>", methods=["PUT"])
+@app.route("/api/v1.0/characters/<string:id>", methods=["PUT"])
 def edit_character(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
 
     if "name" in request.form and "age" in request.form and "weapon" in request.form and "victories" in request.form:
-        result = roster.update_one({"_id": ObjectId(id)}, {
+        result = characters.update_one({"_id": ObjectId(id)}, {
             "$set": {"name": request.form["name"], "age": request.form["age"], "weapon": request.form["weapon"], "victories": request.form["victories"]}})
 
         if result.matched_count == 1:
-            edited_character_link = "http://localhost:5000/api/v1.0/roster/" + id
+            edited_character_link = "http://localhost:5000/api/v1.0/characters/" + id
             return make_response(jsonify({"url": edited_character_link}), 200)
         else:
             return make_response(jsonify({"error": "Invalid character ID"}), 404)
     else:
         return make_response(jsonify({"error": "Missing form data"}), 404)
 
-@app.route("/api/v1.0/roster/<string:id>", methods=["DELETE"])
-@jwt_required
-@admin_required
+@app.route("/api/v1.0/characters/<string:id>", methods=["DELETE"])
+#@jwt_required
+#@admin_required
 def delete_character(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
    
-    result = roster.delete_one({"_id": ObjectId(id)})
+    result = characters.delete_one({"_id": ObjectId(id)})
     if result.deleted_count == 1:
         return make_response(jsonify({}), 204)
     else:
         return make_response(jsonify({"error": "Invalid character ID"}), 404)
 
-@app.route("/api/v1.0/roster/<string:id>/rank", methods=["POST"])
-@jwt_required
+@app.route("/api/v1.0/characters/<string:id>/rank", methods=["POST"])
+#@jwt_required
 def add_new_rank(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -142,17 +142,17 @@ def add_new_rank(id):
         "comment": request.form["comment"],
         "rank": request.form["rank"]
     }
-    roster.update_one({"_id": ObjectId(id)}, {"$push": {"rank": new_rank}})
-    new_rank_link = "http://localhost:5000/api/v1.0/roster/" + id + "/rank/" + str(new_rank['_id'])
+    characters.update_one({"_id": ObjectId(id)}, {"$push": {"rank": new_rank}})
+    new_rank_link = "http://localhost:5000/api/v1.0/characters/" + id + "/rank/" + str(new_rank['_id'])
     return make_response(jsonify({"url": new_rank_link}), 201)
 
-@app.route("/api/v1.0/roster/<string:id>/rank", methods=["GET"])
-@jwt_required
+@app.route("/api/v1.0/characters/<string:id>/rank", methods=["GET"])
+#@jwt_required
 def fetch_all_ranks(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
     data_to_return = []
-    character = roster.find_one( { "_id" : ObjectId(id) }, 
+    character = characters.find_one( { "_id" : ObjectId(id) }, 
     {"rank" : 1, "_id" : 0 } )
     for rank in character["rank"]:
         rank["_id"] = str(rank["_id"])
@@ -160,15 +160,15 @@ def fetch_all_ranks(id):
     return make_response( jsonify ( data_to_return ), 200)
 
 
-@app.route("/api/v1.0/roster/<cid>/rank/<rid>", methods=["GET"])
-@jwt_required
+@app.route("/api/v1.0/characters/<cid>/rank/<rid>", methods=["GET"])
+#@jwt_required
 def fetch_one_rank(cid, rid):
     if len(cid) != 24 or not all(c in string.hexdigits for c in cid):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
     elif len(rid) != 24 or not all(c in string.hexdigits for c in rid):
         return make_response(jsonify({"error": "Invalid Rank ID"}), 404)
 
-    character = roster.find_one({"rank._id": ObjectId(rid)}, {"_id": 0, "rank.$": 1})
+    character = characters.find_one({"rank._id": ObjectId(rid)}, {"_id": 0, "rank.$": 1})
     if character is None:
         return make_response(jsonify({"error": "Invalid character ID or rank ID"}), 404)
     character['rank'][0]['_id'] = str(character['rank'][0]['_id'])
@@ -176,8 +176,8 @@ def fetch_one_rank(cid, rid):
     return make_response(jsonify(character['rank'][0]), 200)
 
 
-@app.route("/api/v1.0/roster/<cid>/rank/<rid>", methods=["PUT"])
-@jwt_required
+@app.route("/api/v1.0/characters/<cid>/rank/<rid>", methods=["PUT"])
+#@jwt_required
 def edit_rank(cid, rid):
     if len(cid) != 24 or not all(c in string.hexdigits for c in cid):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -189,21 +189,21 @@ def edit_rank(cid, rid):
         "rank.$.comment": request.form["comment"],
         "rank.$.rank": request.form['rank']
     }
-    roster.update_one({"rank._id": ObjectId(rid)}, {"$set": edited_rank})
-    edit_rank_url = "http://localhost:5000/api/v1.0/roster/" + cid + "/rank/" + rid
+    characters.update_one({"rank._id": ObjectId(rid)}, {"$set": edited_rank})
+    edit_rank_url = "http://localhost:5000/api/v1.0/characters/" + cid + "/rank/" + rid
     return make_response(jsonify({"url": edit_rank_url}), 200)
 
 
-@app.route("/api/v1.0/roster/<cid>/rank/<rid>", methods=["DELETE"])
-@jwt_required
-@admin_required
+@app.route("/api/v1.0/characters/<cid>/rank/<rid>", methods=["DELETE"])
+#@jwt_required
+#@admin_required
 def delete_rank(cid, rid):
     if len(cid) != 24 or not all(c in string.hexdigits for c in cid):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
     elif len(rid) != 24 or not all(c in string.hexdigits for c in rid):
         return make_response(jsonify({"error": "Invalid Rank ID"}), 404)
 
-    roster.update_one({"_id": ObjectId(cid)}, {"$pull": {"rank": {"_id": ObjectId(rid)}}})
+    characters.update_one({"_id": ObjectId(cid)}, {"$pull": {"rank": {"_id": ObjectId(rid)}}})
     return make_response(jsonify({}), 204)
 
 @app.route("/api/v1.0/login", methods=["GET"])
@@ -229,7 +229,7 @@ def login():
 #define route to logout endpoint and a get request. Jwt required checking for presence
 #of an x-access token needed to access function
 @app.route('/api/v1.0/logout', methods=["GET"])
-@jwt_required
+#@jwt_required
 def logout():
     token = request.headers['x-access-token']
     blacklist.insert_one({"token": token})

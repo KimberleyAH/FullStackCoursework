@@ -13,7 +13,7 @@ export class CharacterComponent {
               private route: ActivatedRoute) {}
 
   async ngOnInit() {
-    var response = await this.webService.getCharacter(this.route.snapshot.params['id']);
+    var response = await this.webService.getCharacter(this.route.snapshot.params['id'])
     this.character = response;
   }
 

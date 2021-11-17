@@ -1,8 +1,10 @@
 <div class="container">
     <div class="row">
        <div class="col-sm-12">
+          <div *ngFor = "let character of characters_list">
             <div class ="card text-black bg-primary mb-3"
-                 style = "width: 50rem; margin: auto; cursor: pointer">
+                 style = "width: 50rem; margin: auto; cursor: pointer"
+                 [routerLink] = "['/characters', character._id]">
                  <div class="card-header">
                     Character details
                 </div>
@@ -26,7 +28,8 @@
                     Character rank:
                     {{ character.rank }}
                 </div>
-            </div>
+             </div>
+          </div>
        </div>
        <!-- col -->
     </div>
