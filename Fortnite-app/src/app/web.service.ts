@@ -16,7 +16,7 @@ export class WebService{
   
 
   getCharacter(id: any) {
-    return this.http.get('http://localhost:5000/api/v1.0/characters/' + id);
+    return this.http.get('http://localhost:5000/api/v1.0/characters/' + id).toPromise();
   }
 }
 
