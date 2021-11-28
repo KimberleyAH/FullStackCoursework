@@ -81,7 +81,7 @@ def show_one_character(id):
         character['_id'] = str(character['_id'])
         for rank in character['rank']:
             rank['_id'] = str(rank['_id'])
-        return make_response(jsonify(character), 200)
+        return make_response(jsonify( [character] ), 200)
     else:
         return make_response(jsonify({"error": "Invalid character ID"}), 404)
 
@@ -138,6 +138,7 @@ def add_new_rank(id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
     new_rank = {
         "_id": ObjectId(),
+        "user_id": "618c4b9db971d3f980a3bd32", 
         "username": request.form["username"],
         "comment": request.form["comment"],
         "rank": request.form["rank"]
@@ -171,7 +172,7 @@ def fetch_one_rank(cid, rid):
     character = characters.find_one({"rank._id": ObjectId(rid)}, {"_id": 0, "rank.$": 1})
     if character is None:
         return make_response(jsonify({"error": "Invalid character ID or rank ID"}), 404)
-    character['rank'][0]['_id'] = str(character['rank'][0]['_id'])
+    character['rank'][0]['_id'] = str( character['rank'][0]['_id'])
 
     return make_response(jsonify(character['rank'][0]), 200)
 

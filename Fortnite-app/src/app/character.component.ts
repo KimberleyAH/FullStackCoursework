@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { WebService } from './web.service';
 import { ActivatedRoute } from '@angular/router';
+import { FormBuilder, Validators } from '@angular/forms';
+import { AuthService } from '@auth0/auth0-angular'
 
 @Component({
   selector: 'character',
@@ -9,16 +11,52 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CharacterComponent {
 
+  rankForm: any;
+
   constructor(private webService: WebService,
-              private route: ActivatedRoute) {}
+              private route: ActivatedRoute,
+              private formBuilder: FormBuilder,
+              public authService: AuthService) {}
 
-  async ngOnInit() {
-    var response = await this.webService.getCharacter(this.route.snapshot.params['id'])
-    this.character = response;
-  }
+  ngOnInit() {
+
+    this.rankForm = this.formBuilder.group( {
+      username: ['', Validators.required],
+      comment: ['', Validators.required],
+      rank: 5
+    });
+
+    this.character_list = this.webService.getCharacter(this.route.snapshot.params['id']);    
+    this.ranks = this.webService.getRanks(this.route.snapshot.params['id'])
+    }
+
+    onSubmit() {
+      this.webService.postRank(this.rankForm.value)
+        .subscribe( ( reponse: any) => {
+          this.rankForm.reset();
+          this.ranks = this.webService.getRanks(this.route.snapshot.params['id']);
+        })
+    }
+
+    isInvalid(control: any){
+      return this.rankForm.controls[control].invalid &&
+             this.rankForm.controls[control].touched;
+    }
+
+    isunTouched() {
+      return this.rankForm.controls.username.pristine ||
+             this.rankForm.controls.comment.pristine;
+    }
+
+    isIncomplete()  {
+      return this.isInvalid('username') ||
+             this.isInvalid('comment') ||
+             this.isunTouched();
+    }
 
 
-  character: any;
+  character_list: any = [];
+  ranks: any = [];
 
 }
 
