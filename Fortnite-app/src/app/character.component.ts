@@ -3,6 +3,7 @@ import { WebService } from './web.service';
 import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '@auth0/auth0-angular'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'character',
@@ -16,7 +17,8 @@ export class CharacterComponent {
   constructor(private webService: WebService,
               private route: ActivatedRoute,
               private formBuilder: FormBuilder,
-              public authService: AuthService) {}
+              public authService: AuthService,
+              private router: Router) {}
 
   ngOnInit() {
 
@@ -28,6 +30,8 @@ export class CharacterComponent {
 
     this.character_list = this.webService.getCharacter(this.route.snapshot.params['id']);    
     this.ranks = this.webService.getRanks(this.route.snapshot.params['id'])
+    this.character = this.webService.deleteCharacter(this.route.snapshot.params['id'])
+    this.rank = this.webService.deleteRank(this.route.snapshot.params['id'])
     }
 
     onSubmit() {
@@ -54,9 +58,30 @@ export class CharacterComponent {
              this.isunTouched();
     }
 
+    deleteCharacter() {
+      this.webService.deleteCharacter(this.route.snapshot.params['id'])
+      .subscribe();
+    }
+
+    deleteRank() {
+      this.webService.deleteRank(this.route.snapshot.params['id'])
+      .subscribe();
+    }
+
+    goToPage(pageName:string){     
+      this.router.navigate([`${pageName}`]);   
+    }
+
+    refreshPage(){     
+      window.location.reload();   
+    }
+
+
 
   character_list: any = [];
   ranks: any = [];
+  character: any = [];
+  rank: any = [];
 
 }
 

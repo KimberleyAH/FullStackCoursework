@@ -14,7 +14,7 @@ export class WebService{
 
   getCharacters(page: number) {
     return this.http.get('http://localhost:5000/api/v1.0/characters?pn=' + page);
-        }
+  }
   
 
   getCharacter(id: any) {
@@ -34,6 +34,25 @@ export class WebService{
 
     return this.http.post("http://localhost:5000/api/v1.0/characters/" +
                            this.characterID + '/rank', postData);
+  }
+
+  
+  postNewCharacter(character: any){
+    let postData = new FormData();
+    postData.append("name", character.name);
+    postData.append("age", character.age);
+    postData.append("weapon", character.weapon);
+    postData.append("victories", character.victories);
+
+    return this.http.post("http://localhost:5000/api/v1.0/characters", postData);
+  }  
+
+  deleteCharacter(id: any){
+    return this.http.delete('http://localhost:5000/api/v1.0/characters/' + id);
+  }
+
+  deleteRank(id: any){
+    return this.http.delete('http://localhost:5000/api/v1.0/characters/' + this.characterID + '/rank/' + id);
   }
 
 

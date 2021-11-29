@@ -141,7 +141,7 @@ def add_new_rank(id):
         "user_id": "618c4b9db971d3f980a3bd32", 
         "username": request.form["username"],
         "comment": request.form["comment"],
-        "rank": request.form["rank"]
+        "rank": int(request.form["rank"])
     }
     characters.update_one({"_id": ObjectId(id)}, {"$push": {"rank": new_rank}})
     new_rank_link = "http://localhost:5000/api/v1.0/characters/" + id + "/rank/" + str(new_rank['_id'])
@@ -188,7 +188,7 @@ def edit_rank(cid, rid):
     edited_rank = {
         "rank.$.username": request.form["username"],
         "rank.$.comment": request.form["comment"],
-        "rank.$.rank": request.form['rank']
+        "rank.$.rank": int(request.form['rank'])
     }
     characters.update_one({"rank._id": ObjectId(rid)}, {"$set": edited_rank})
     edit_rank_url = "http://localhost:5000/api/v1.0/characters/" + cid + "/rank/" + rid

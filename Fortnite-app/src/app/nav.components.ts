@@ -12,3 +12,4 @@ export class NavComponent {
     constructor(public authService: AuthService,
                 public router: Router) {}
  }
+

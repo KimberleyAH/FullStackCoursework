@@ -31,6 +31,13 @@ export class CharactersComponent {
     this.character_list = this.webService.getCharacters(this.page);
   }
 
+  lastPage() {
+    this.page = this.page - 1;
+    sessionStorage['page'] = this.page;
+    this.character_list = this.webService.getCharacters(this.page);
+  }
+  
+
   character_list: any = [];
   page: number = 1;
 

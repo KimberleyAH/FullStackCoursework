@@ -10,6 +10,7 @@ import { HomeComponent } from './home.component';
 import { CharacterComponent } from './character.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './nav.components';
+import { newCharacterComponent } from './newCharacter.component';
 
 //import module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
@@ -26,6 +27,10 @@ var routes: any = [
   {
     path: 'characters/:id',
     component: CharacterComponent
+  },
+  {
+    path: 'newcharacter',
+    component: newCharacterComponent
   }
 ];
 
@@ -35,7 +40,8 @@ var routes: any = [
     CharactersComponent, 
     HomeComponent, 
     CharacterComponent,
-    NavComponent
+    NavComponent,
+    newCharacterComponent
   ],
   imports: [
     BrowserModule,

@@ -31,6 +31,11 @@
        </div>
        <!-- col -->
     </div>
+    <div class="col-sm-12 text-end">
+        <button class="btn btn-dark" (click) = "deleteCharacter(); goToPage('characters');">
+            Delete character
+        </button>
+    </div>
     <!-- row -->
  </div>
  <!-- container -->
@@ -49,6 +54,11 @@
                 </div>
                 <div class="card-footer">
                     Rank: {{ rank.rank }} 
+                </div>
+                <div class="col-sm-12 text-end">
+                    <button class="btn btn-dark" (click) = "deleteRank();">
+                        Delete a rank
+                    </button>
                 </div>
             </div>
          </div>
