@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 export class CharacterComponent {
 
   rankForm: any;
+  editCharacterForm: any;
 
   constructor(private webService: WebService,
               private route: ActivatedRoute,
@@ -28,10 +29,10 @@ export class CharacterComponent {
       rank: 5
     });
 
+    
+
     this.character_list = this.webService.getCharacter(this.route.snapshot.params['id']);    
-    this.ranks = this.webService.getRanks(this.route.snapshot.params['id'])
-    this.character = this.webService.deleteCharacter(this.route.snapshot.params['id'])
-    this.rank = this.webService.deleteRank(this.route.snapshot.params['id'])
+    this.ranks = this.webService.getRanks(this.route.snapshot.params['id']);
     }
 
     onSubmit() {
@@ -62,11 +63,12 @@ export class CharacterComponent {
       this.webService.deleteCharacter(this.route.snapshot.params['id'])
       .subscribe();
     }
-
-    deleteRank() {
-      this.webService.deleteRank(this.route.snapshot.params['id'])
+//changing
+    deleteRank(rank_id: any) {
+      this.webService.deleteRank(this.route.snapshot.params['id'], rank_id)
       .subscribe();
-    }
+      }
+
 
     goToPage(pageName:string){     
       this.router.navigate([`${pageName}`]);   
@@ -76,12 +78,14 @@ export class CharacterComponent {
       window.location.reload();   
     }
 
+    
+
+    
+
 
 
   character_list: any = [];
   ranks: any = [];
   character: any = [];
-  rank: any = [];
-
 }
 

@@ -1,10 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
+
 @Injectable()
 export class WebService{
 
   private characterID: any;
+ 
 
   constructor(private http: HttpClient){
 
@@ -51,10 +53,20 @@ export class WebService{
     return this.http.delete('http://localhost:5000/api/v1.0/characters/' + id);
   }
 
-  deleteRank(id: any){
-    return this.http.delete('http://localhost:5000/api/v1.0/characters/' + this.characterID + '/rank/' + id);
+  deleteRank(char_id: any, rank_id: any){
+    return this.http.delete("http://localhost:5000/api/v1.0/characters/" + char_id + "/rank/" + rank_id);
   }
 
+  editCharacter(character: any){
+    let putData = new FormData();
+    putData.append("name", character.name);
+    putData.append("age", character.age);
+    putData.append("weapon", character.weapon);
+    putData.append("victories", character.victories);
+
+    return this.http.put('http://localhost:5000/api/v1.0/characters/' + this.characterID, putData);
+
+  }
 
 
 } 

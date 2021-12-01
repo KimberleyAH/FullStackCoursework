@@ -11,6 +11,8 @@ import { CharacterComponent } from './character.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './nav.components';
 import { newCharacterComponent } from './newCharacter.component';
+//import { deleteRankComponent } from './deleteRank.component';
+import { editCharacterComponent } from './editCharacter.component';
 
 //import module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
@@ -31,7 +33,19 @@ var routes: any = [
   {
     path: 'newcharacter',
     component: newCharacterComponent
+  },
+  {
+    path: 'editCharacter/:id',
+    component: editCharacterComponent
   }
+  // {
+  //   path: 'rank/:id',
+  //   component: CharactersComponent
+  // },
+  // {
+  //   path: 'characters/:char_id/rank/:rank_id',
+  //   component: deleteRankComponent
+  // }
 ];
 
 @NgModule({
@@ -41,7 +55,9 @@ var routes: any = [
     HomeComponent, 
     CharacterComponent,
     NavComponent,
-    newCharacterComponent
+    newCharacterComponent,
+    editCharacterComponent
+   // deleteRankComponent
   ],
   imports: [
     BrowserModule,

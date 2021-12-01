@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { WebService } from './web.service';
+import { AuthService } from '@auth0/auth0-angular'
+
 
 @Component({
   selector: 'characters',
@@ -8,7 +10,8 @@ import { WebService } from './web.service';
 })
 export class CharactersComponent {
 
-  constructor(public webService: WebService) {}
+  constructor(private webService: WebService,
+              public authService: AuthService) {}
 
     ngOnInit() {
       if (sessionStorage['page']) {
@@ -36,7 +39,8 @@ export class CharactersComponent {
     sessionStorage['page'] = this.page;
     this.character_list = this.webService.getCharacters(this.page);
   }
-  
+
+   
 
   character_list: any = [];
   page: number = 1;
