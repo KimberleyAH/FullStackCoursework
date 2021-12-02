@@ -13,6 +13,7 @@ import { NavComponent } from './nav.components';
 import { newCharacterComponent } from './newCharacter.component';
 //import { deleteRankComponent } from './deleteRank.component';
 import { editCharacterComponent } from './editCharacter.component';
+import { editRankComponent } from './editRank.component';
 
 //import module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
@@ -37,6 +38,10 @@ var routes: any = [
   {
     path: 'editCharacter/:id',
     component: editCharacterComponent
+  },
+  {
+    path: 'characters/:char_id/editRank/:rank_id',
+    component: editRankComponent
   }
   // {
   //   path: 'rank/:id',
@@ -56,7 +61,8 @@ var routes: any = [
     CharacterComponent,
     NavComponent,
     newCharacterComponent,
-    editCharacterComponent
+    editCharacterComponent,
+    editRankComponent
    // deleteRankComponent
   ],
   imports: [

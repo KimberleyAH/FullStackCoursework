@@ -34,7 +34,7 @@ ngOnInit() {
 }
 
 onSubmit() {
-    this.webService.editCharacter(this.editCharacterForm.value)
+    this.webService.putCharacter(this.editCharacterForm.value)
         .subscribe( (response: any) => {
             this.editCharacterForm.reset();
             this.characters = this.webService.getCharacters(this.route.snapshot.params['id']);

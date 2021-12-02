@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class WebService{
 
   private characterID: any;
+  private rankID: any;
  
 
   constructor(private http: HttpClient){
@@ -22,6 +23,11 @@ export class WebService{
   getCharacter(id: any) {
     this.characterID = id;
     return this.http.get('http://localhost:5000/api/v1.0/characters/' + id);
+  }
+
+  getRank(id: any) {
+    this.rankID = id;
+    return this.http.get('http://localhost:5000/api/v1.0/characters/' + this.characterID + '/rank' + id);
   }
 
   getRanks(id: any) {
@@ -57,7 +63,7 @@ export class WebService{
     return this.http.delete("http://localhost:5000/api/v1.0/characters/" + char_id + "/rank/" + rank_id);
   }
 
-  editCharacter(character: any){
+  putCharacter(character: any){
     let putData = new FormData();
     putData.append("name", character.name);
     putData.append("age", character.age);
@@ -66,6 +72,15 @@ export class WebService{
 
     return this.http.put('http://localhost:5000/api/v1.0/characters/' + this.characterID, putData);
 
+  }
+
+  putRank(rank: any){
+    let putData = new FormData();
+    putData.append("username", rank.username);
+    putData.append("comment", rank.comment);
+    putData.append("rank", rank.rank);
+
+    return this.http.put("http://localhost:5000/api/v1.0/characters/" + this.characterID + '/rank/'+ this.rankID, putData);
   }
 
 

@@ -26,7 +26,7 @@ export class CharacterComponent {
     this.rankForm = this.formBuilder.group( {
       username: ['', Validators.required],
       comment: ['', Validators.required],
-      rank: 5
+      rank: 0
     });
 
     
