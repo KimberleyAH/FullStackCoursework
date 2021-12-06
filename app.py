@@ -72,7 +72,7 @@ def show_all_characters():
     return make_response(jsonify(data_to_return), 200)
 
 @app.route("/api/v1.0/characters/<string:id>", methods=["GET"])
-#@jwt_required
+@jwt_required
 def show_one_character(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -119,8 +119,8 @@ def edit_character(id):
         return make_response(jsonify({"error": "Missing form data"}), 404)
 
 @app.route("/api/v1.0/characters/<string:id>", methods=["DELETE"])
-#@jwt_required
-#@admin_required
+@jwt_required
+@admin_required
 def delete_character(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -132,7 +132,7 @@ def delete_character(id):
         return make_response(jsonify({"error": "Invalid character ID"}), 404)
 
 @app.route("/api/v1.0/characters/<string:id>/rank", methods=["POST"])
-#@jwt_required
+@jwt_required
 def add_new_rank(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -148,7 +148,7 @@ def add_new_rank(id):
     return make_response(jsonify({"url": new_rank_link}), 201)
 
 @app.route("/api/v1.0/characters/<string:id>/rank", methods=["GET"])
-#@jwt_required
+@jwt_required
 def fetch_all_ranks(id):
     if len(id) != 24 or not all(c in string.hexdigits for c in id):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -162,7 +162,7 @@ def fetch_all_ranks(id):
 
 
 @app.route("/api/v1.0/characters/<cid>/rank/<rid>", methods=["GET"])
-#@jwt_required
+@jwt_required
 def fetch_one_rank(cid, rid):
     if len(cid) != 24 or not all(c in string.hexdigits for c in cid):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -178,7 +178,7 @@ def fetch_one_rank(cid, rid):
 
 
 @app.route("/api/v1.0/characters/<cid>/rank/<rid>", methods=["PUT"])
-#@jwt_required
+@jwt_required
 def edit_rank(cid, rid):
     if len(cid) != 24 or not all(c in string.hexdigits for c in cid):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -196,8 +196,8 @@ def edit_rank(cid, rid):
 
 
 @app.route("/api/v1.0/characters/<cid>/rank/<rid>", methods=["DELETE"])
-#@jwt_required
-#@admin_required
+@jwt_required
+@admin_required
 def delete_rank(cid, rid):
     if len(cid) != 24 or not all(c in string.hexdigits for c in cid):
         return make_response(jsonify({"error": "Invalid Character ID"}), 404)
@@ -230,7 +230,7 @@ def login():
 #define route to logout endpoint and a get request. Jwt required checking for presence
 #of an x-access token needed to access function
 @app.route('/api/v1.0/logout', methods=["GET"])
-#@jwt_required
+@jwt_required
 def logout():
     token = request.headers['x-access-token']
     blacklist.insert_one({"token": token})

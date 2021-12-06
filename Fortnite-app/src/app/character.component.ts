@@ -20,7 +20,7 @@ export class CharacterComponent {
               private formBuilder: FormBuilder,
               public authService: AuthService,
               private router: Router) {}
-
+//validation required to complete form
   ngOnInit() {
 
     this.rankForm = this.formBuilder.group( {
@@ -34,7 +34,7 @@ export class CharacterComponent {
     this.character_list = this.webService.getCharacter(this.route.snapshot.params['id']);    
     this.ranks = this.webService.getRanks(this.route.snapshot.params['id']);
     }
-
+//submit button function
     onSubmit() {
       this.webService.postRank(this.rankForm.value)
         .subscribe( ( reponse: any) => {
@@ -42,7 +42,7 @@ export class CharacterComponent {
           this.ranks = this.webService.getRanks(this.route.snapshot.params['id']);
         })
     }
-
+//validation controls
     isInvalid(control: any){
       return this.rankForm.controls[control].invalid &&
              this.rankForm.controls[control].touched;
@@ -58,21 +58,23 @@ export class CharacterComponent {
              this.isInvalid('comment') ||
              this.isunTouched();
     }
-
+//deleting a character
     deleteCharacter() {
       this.webService.deleteCharacter(this.route.snapshot.params['id'])
       .subscribe();
     }
+    //deleting a rank
     deleteRank(rank_id: any) {
       this.webService.deleteRank(this.route.snapshot.params['id'], rank_id)
       .subscribe();
       }
 
-// https://stackoverflow.com/questions/47010159/how-to-redirect-to-a-new-page-in-angular-4-through-button-click
+//https://stackoverflow.com/questions/47010159/how-to-redirect-to-a-new-page-in-angular-4-through-button-click
+//return to page selected
     goToPage(pageName:string){     
       this.router.navigate([`${pageName}`]);   
     }
-
+//reloading to land on same page
     reloadComponent() {
       let currentUrl = this.router.url;
           this.router.routeReuseStrategy.shouldReuseRoute = () => false;

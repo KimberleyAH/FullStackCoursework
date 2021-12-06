@@ -19,7 +19,7 @@ export class newCharacterComponent {
                 private formBuilder: FormBuilder,
                 public authService: AuthService,
                 private router: Router) {}
-                
+//validation required to complete form                
 ngOnInit() {
     this.newCharacterForm = this.formBuilder.group( {
         name: ['', Validators.required],
@@ -32,7 +32,7 @@ ngOnInit() {
     this.characters = this.webService.getCharacters(this.route.snapshot.params['id'])
 
 }
-
+//submit function to add a new character
 onSubmit() {
     this.webService.postNewCharacter(this.newCharacterForm.value)
         .subscribe( (response: any) => {
@@ -41,7 +41,7 @@ onSubmit() {
         })
     this.newCharacterForm.reset();
   }
-
+//validation controls
 isInvalid(control: any){
     return this.newCharacterForm.controls[control].invalid &&
            this.newCharacterForm.controls[control].touched;
@@ -62,12 +62,12 @@ isInvalid(control: any){
            this.isunTouched();
   }
 
-
-
+//https://stackoverflow.com/questions/47010159/how-to-redirect-to-a-new-page-in-angular-4-through-button-click
+//return to page selected, difficulty implementing this on new character and edit character/edit rank
   goToPage(pageName:string){     
     this.router.navigate([`${pageName}`]);   
   }
-
+//reloading to land on same page
   reloadComponent() {
     let currentUrl = this.router.url;
         this.router.routeReuseStrategy.shouldReuseRoute = () => false;

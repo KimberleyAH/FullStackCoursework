@@ -19,7 +19,7 @@ export class editCharacterComponent {
                 private formBuilder: FormBuilder,
                 public authService: AuthService,
                 private router: Router) {}
-                
+//validation required to complete form                
 ngOnInit() {
     this.editCharacterForm = this.formBuilder.group( {
         name: ['', Validators.required],
@@ -32,7 +32,7 @@ ngOnInit() {
     this.characters = this.webService.getCharacters(this.route.snapshot.params['id'])
 
 }
-
+//submit function to edit character and reset form
 onSubmit() {
     this.webService.putCharacter(this.editCharacterForm.value)
         .subscribe( (response: any) => {
@@ -41,7 +41,7 @@ onSubmit() {
         })
     this.editCharacterForm.reset();
   }
-
+//validation controls
 isInvalid(control: any){
     return this.editCharacterForm.controls[control].invalid &&
            this.editCharacterForm.controls[control].touched;
@@ -61,7 +61,8 @@ isInvalid(control: any){
            this.isInvalid('victories') ||
            this.isunTouched();
   }
-
+//https://stackoverflow.com/questions/47010159/how-to-redirect-to-a-new-page-in-angular-4-through-button-click
+//return to page selected, difficulty implementing this on new character and edit character/edit rank
   goToPage(pageName:string){     
     this.router.navigate([pageName]);   
   }

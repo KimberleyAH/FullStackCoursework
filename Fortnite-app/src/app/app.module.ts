@@ -18,7 +18,7 @@ import { editRankComponent } from './editRank.component';
 // import { testPagination } from './testPagination.component';
 //import module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
-
+//route paths
 var routes: any = [
   {
     path: '',
@@ -57,7 +57,7 @@ var routes: any = [
   //   component: deleteRankComponent
   // }
 ];
-
+//valid components and components tested but difficulty implementing
 @NgModule({
   declarations: [
     AppComponent, 

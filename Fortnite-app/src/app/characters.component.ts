@@ -12,7 +12,7 @@ export class CharactersComponent {
 
   constructor(private webService: WebService,
               public authService: AuthService) {}
-
+//session storage 
     ngOnInit() {
       if (sessionStorage['page']) {
         this.page = Number(sessionStorage['page']);
@@ -28,7 +28,7 @@ export class CharactersComponent {
   //   }
   // }
   
-
+//go to previous page
   previousPage() {
     if (this.page > 1) {
       this.page = this.page -1;
@@ -36,7 +36,7 @@ export class CharactersComponent {
       this.character_list = this.webService.getCharacters(this.page);
     }
   }
-
+//go to next page
   nextPage() {
     this.page = this.page + 1;
     sessionStorage['page'] = this.page;
@@ -50,10 +50,6 @@ export class CharactersComponent {
   //     this.character_list = this.webService.getCharacters(this.page);
   //   }
   // }
-  
-
-
-   
 
   character_list: any = [];
   page: number = 1;
