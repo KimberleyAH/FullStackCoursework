@@ -1,72 +1,81 @@
-.error { background-color: #fff0f0; }
+.error {
+  background-color: #fff0f0;
+}
 
-.error { background-color: #fff0f0; }
+.error {
+  background-color: #fff0f0;
+}
 
-.form-group{
-    width: 600px;
-    text-align: center;
-    display: block;
-    margin-left: 805px;
-    margin-right: auto;
-    font-family: monospace;
-  }
+.form-group {
+  width: 600px;
+  text-align: center;
+  display: block;
+  margin-left: 860px;
+  margin-right: auto;
+  font-family: monospace;
+}
 
-  #FE {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    z-index: -1;
-  
-    /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
-  }
+#FE {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #000;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 30px;
-  }
-  
-  p {
-    font-weight: 700;
-    text-align:right;
-    font-size: 40px;
-    font-family: Hack, monospace;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #000, rgb(253, 167, 7), #000);
-    letter-spacing: 5px;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: shine 5s linear infinite;
-    position: relative;
-  }
-  
-  @keyframes shine {
-    0% {
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h2 {
+  font-family: monospace;
+  color: rgb(7, 7, 7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 30px;
+}
+
+p {
+  font-weight: 700;
+  text-align: right;
+  font-size: 40px;
+  font-family: Hack, monospace;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, rgb(253, 167, 7), #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
       background-position-x: -500%;
-    }
-    100% {
-      background-position-x: 500%;
-    }
   }
-  
-  /*  Checkout my other pens on  https://codepen.io/grohit/  */
-  /* Copyright (c) 2021 by G Rohit (https://codepen.io/grohit/pen/mdJqEzK)
+  100% {
+      background-position-x: 500%;
+  }
+}
+
+/*  Checkout my other pens on  https://codepen.io/grohit/  */
+/* Copyright (c) 2021 by G Rohit (https://codepen.io/grohit/pen/mdJqEzK)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -74,9 +83,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
- */
+*/
 
- button {
+button {
   color: #bf04f8;
   background-color: #050505;
   border: 1px solid #8159b4;
@@ -85,39 +94,39 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   cursor: pointer;
   height: 32px;
   font-size: 14px;
-  font-family:monospace;
+  font-family: monospace;
   transition: all 0.2s ease-in-out;
   text-align: right;
   position: relative;
 }
 button:hover {
- animation: swing 1s ease;
- animation-iteration-count: 1;
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
 }
 
 @keyframes swing {
   15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
+      -webkit-transform: translateX(5px);
+      transform: translateX(5px);
   }
   30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px);
   }
   50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
   }
   65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
+      -webkit-transform: translateX(-3px);
+      transform: translateX(-3px);
   }
   80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
+      -webkit-transform: translateX(2px);
+      transform: translateX(2px);
   }
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
   }
 }

@@ -1,111 +1,91 @@
-<img src="assets/F_R.jpg" id="FR" alt="Fortnite image">
+<img src="assets/F_R.jpg" id="FR" alt="Fortnite image" />
 
 <div class="container" style="margin-top: 70px;">
     <div class="row">
-       <div class="col-sm-12">
-            <div class ="card text-white bg-dark mb-3"
-                 style = "width: 30rem; margin: auto; cursor: pointer">
-                 <div *ngFor = "let character of character_list | async">
+        <div class="col-sm-12">
+            <div class="card text-white bg-dark mb-3" style="width: 30rem; margin: auto; cursor: pointer;">
+                <div *ngFor="let character of character_list | async">
                     <div class="card-header">
                         Character information
                     </div>
                     <div class="card-body">
-                        This character has been assigned the name of
-                        {{ character.name }}.
-                    </div>
-                     <div class="card-body">
-                        This character is
-                        {{character.age}}
-                        years old.
+                        This character has been assigned the name of {{ character.name }}.
                     </div>
                     <div class="card-body">
-                        This character has a
-                        {{ character.weapon }}
-                        for battle.
+                        This character is {{character.age}} years old.
                     </div>
                     <div class="card-body">
-                        This character has
-                        {{ character.victories }}
-                        victories in battle.
+                        This character has a {{ character.weapon }} for battle.
+                    </div>
+                    <div class="card-body">
+                        This character has {{ character.victories }} victories in battle.
                     </div>
                     <div class="card-footer">
-                        This character has been ranked a total of
-                        {{ character.rank.length }}
-                        times by users.
+                        This character has been ranked a total of {{ character.rank.length }} times by users.
                     </div>
-                <div class="col-sm-12 text-end">
-                    <button class="btn btn-dark" [routerLink]="['/editCharacter', character._id]">
-                        Edit this character
-                    </button>
                     <div class="col-sm-12 text-end">
-        <button class="btn btn-dark" (click) = "deleteCharacter(); reloadComponent()">
-            Delete character
-        </button>
+                        <button class="btn btn-dark" [routerLink]="['/editCharacter', character._id]">
+                            Edit this character
+                        </button>
+                        <div class="col-sm-12 text-end">
+                            <button class="btn btn-dark" (click)="deleteCharacter(); reloadComponent()">
+                                Delete character
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-       </div>
-       
+        </div>
+        <!-- row -->
     </div>
+    <!-- container -->
 
-    </div>
-    <!-- row -->
- </div>
- <!-- container -->
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <div *ngFor ="let rank of ranks | async"> 
-                <div class="card bg-dark mb-3 card text-white"
-                    style="width: 30rem; margin: auto">
-                <div class="card-header">
-                    Rank by user: {{ rank.username }}
-                </div>
-                <div class="card-body">
-                    {{ rank.comment }}
-                </div>
-                <div class="card-footer">
-                    Rank: {{ rank.rank }} 
-                </div>
-                <div class="col-sm-12 text-end">
-                </div>
-                <button class="btn btn-dark" (click) = "deleteRank(rank._id); reloadComponent()">
-                    Delete a rank
-               </button>
-               <button class="btn btn-dark" [routerLink]="['editRank/', rank._id]" >
-                Edit a rank
-               </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div *ngFor="let rank of ranks | async">
+                    <div class="card bg-dark mb-3 card text-white" style="width: 30rem; margin: auto;">
+                        <div class="card-header">
+                            Rank by user: {{ rank.username }}
+                        </div>
+                        <div class="card-body">
+                            {{ rank.comment }}
+                        </div>
+                        <div class="card-footer">
+                            Rank: {{ rank.rank }}
+                        </div>
+                        <div class="col-sm-12 text-end"></div>
+                        <button class="btn btn-dark" (click)="deleteRank(rank._id); reloadComponent()">
+                            Delete a rank
+                        </button>
+                        <button class="btn btn-dark" [routerLink]="['editRank/', rank._id]">
+                            Edit a rank
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
- <div class="container">
-     <div class="row">
-         <div class="col-sm-12">
-
-            <ng-container
-                *ngIf = "authService.isAuthenticated$ | async;
-                else loggedOut">
-
-                <h2 style="text-align: center"> Rank this character!</h2>
-                <form [formGroup] = "rankForm" (ngSubmit)="onSubmit()">
-                    <div class="form-group">
-                        <label for="username">Name:</label>
-                        <input type="text" id="username" name="username"
-                            class="form-control" formControlName="username"
-                            [ngClass]="{ 'error' : isInvalid('username') }">
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Please leave your comment below:</label>
-                        <textarea name="comment" id="comment" rows="3"
-                                class="form-control" formControlName="comment"
-                                [ngClass]="{ 'error' : isInvalid('comment') }"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="rank">Please rank this character (10 = best)</label>
-                        <select name="rank" id="rank"
-                                class="form-control" formControlName="rank">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ng-container
+                    *ngIf="authService.isAuthenticated$ | async;
+                else loggedOut"
+                >
+                    <h2 style="text-align: center;">Rank this character!</h2>
+                    <form [formGroup]="rankForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="username">Name:</label>
+                            <input type="text" id="username" name="username" placeholder="Deadpool" class="form-control" formControlName="username" [ngClass]="{ 'error' : isInvalid('username') }" />
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Please leave your comment below:</label>
+                            <textarea name="comment" id="comment" rows="3" placeholder="This is a great character" class="form-control" formControlName="comment" [ngClass]="{ 'error' : isInvalid('comment') }"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="rank">Please rank this character (10 = best)</label>
+                            <select name="rank" id="rank" class="form-control" formControlName="rank">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -116,25 +96,21 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                                 <option value="10">10</option>
-                        </select>
-                    </div>
+                            </select>
+                        </div>
 
-                    <span *ngIf="isIncomplete()"
-                        style="margin-left: 390px;">
-                        You must complete all fields
-                    </span>
+                        <span *ngIf="isIncomplete()" style="margin-left: 390px;">
+                            You must complete all fields
+                        </span>
 
-                    <button *ngIf="!isIncomplete()"
-                            style="margin-left: 390px;"
-                            type="submit"
-                            class="btn.btn-primary" >Submit</button>
-                </form>
-            </ng-container>
+                        <button *ngIf="!isIncomplete()" style="margin-left: 390px;" type="submit" class="btn.btn-primary">Submit</button>
+                    </form>
+                </ng-container>
 
-            <ng-template #loggedOut>
-                <h2>Please login to rank this character</h2>
-            </ng-template>
-            
-         </div>
-     </div>
- </div>
+                <ng-template #loggedOut>
+                    <h2>Please login to rank this character</h2>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

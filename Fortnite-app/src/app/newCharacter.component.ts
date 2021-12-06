@@ -62,9 +62,18 @@ isInvalid(control: any){
            this.isunTouched();
   }
 
+
+
   goToPage(pageName:string){     
-    this.router.navigate([pageName]);   
+    this.router.navigate([`${pageName}`]);   
   }
+
+  reloadComponent() {
+    let currentUrl = this.router.url;
+        this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+        this.router.onSameUrlNavigation = 'reload';
+        this.router.navigate([currentUrl]);
+    }
 
   character_list: any = [];
   characters: any = [];

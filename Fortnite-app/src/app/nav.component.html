@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <span class="navbar-brand">
-        <img src="assets/FortniteRanker.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-        ForniteRanker
+        <img src="assets/FortniteRanker.jpg" width="30" height="30" class="d-inline-block align-top" alt="" />
+        FortniteRanker
     </span>
     <ul class="navbar-nav">
         <li class="nav-item">
@@ -20,17 +20,17 @@
             *ngIf="authService.isAuthenticated$ | async;
              else loggedOut"
         >
-            <button class="btn btn-outline-light" 
-                    (click)="authService.logout()">
+            <button class="btn btn-outline-light" (click)="authService.logout()">
                 Logout
             </button>
-
         </ng-container>
 
         <ng-template #loggedOut>
-            <button class="btn btn-outline-light" 
-                    (click)="authService.loginWithRedirect( {
-                        appState : { target: this.router.url } } )">
+            <button
+                class="btn btn-outline-light"
+                (click)="authService.loginWithRedirect( {
+                        appState : { target: this.router.url } } )"
+            >
                 Login
             </button>
         </ng-template>

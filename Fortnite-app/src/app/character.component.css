@@ -1,99 +1,101 @@
-.error { background-color: #fff0f0; }
+.error {
+  background-color: #fff0f0;
+}
 
 :root {
-    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
-  }
-  
-  body {
-    background: #111 !important;
-  }
-  
-  .card {
-    background: #222;
-    border: 4px solid #8159b4;
-    color: rgba(250, 250, 250, 0.8);
-    margin-bottom: 2rem;
-  }
-  .card-header{
-      color: #f8f8f8;
-      font-family:monospace;
-  }
-  .card-body{
-    color: #e0a1f3;
-    font-family:monospace;
-  }
-  .card-footer{
-      color: #f8f8f8;
-      font-family:monospace;
-  }
-  #FR {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    z-index: -1;
-  
-    /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
-    background-size: cover;
-    background-color: #464646;
-    background-position: center center;
-    background-attachment: fixed;
-  }
+  --gradient: linear-gradient(to left top, #dd2476 10%, #ff512f 90%) !important;
+}
 
-  .form-group{
-    width: 500px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family:monospace;
-  }
-  h2{
-    font-family:monospace;
-    color: white;
-  }
+body {
+  background: #111 !important;
+}
+
+.card {
+  background: #222;
+  border: 4px solid #8159b4;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+.card-header {
+  color: #f8f8f8;
+  font-family: monospace;
+}
+.card-body {
+  color: #e0a1f3;
+  font-family: monospace;
+}
+.card-footer {
+  color: #f8f8f8;
+  font-family: monospace;
+}
+#FR {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-color: #464646;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.form-group {
+  width: 500px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+}
+
+h2 {
+  font-family: monospace;
+  color: rgb(253, 253, 253);
+}
 button {
-    color: #bf04f8;
-    background-color: #050505;
-    border: 1px solid #8159b4;
-    border-radius: 4px;
-    padding: 0 15px;
-    cursor: pointer;
-    height: 32px;
-    font-size: 14px;
-    font-family:monospace;
-    transition: all 0.2s ease-in-out;
-    }
-  button:hover {
-   animation: swing 1s ease;
-   animation-iteration-count: 1;
-  }
+  color: #bf04f8;
+  background-color: #050505;
+  border: 1px solid #8159b4;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 32px;
+  font-size: 14px;
+  font-family: monospace;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
+}
 
-  
-  @keyframes swing {
-    15% {
+@keyframes swing {
+  15% {
       -webkit-transform: translateX(5px);
       transform: translateX(5px);
-    }
-    30% {
+  }
+  30% {
       -webkit-transform: translateX(-5px);
       transform: translateX(-5px);
-    }
-    50% {
+  }
+  50% {
       -webkit-transform: translateX(3px);
       transform: translateX(3px);
-    }
-    65% {
+  }
+  65% {
       -webkit-transform: translateX(-3px);
       transform: translateX(-3px);
-    }
-    80% {
+  }
+  80% {
       -webkit-transform: translateX(2px);
       transform: translateX(2px);
-    }
-    100% {
+  }
+  100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
-    }
   }
+}

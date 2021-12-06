@@ -1,78 +1,69 @@
 <div>
-    <p>Fornite Characters <br><a href="https://codepen.io/grohit/">ADD YOUR OWN CHARACTER</a></p>
-    <img src="assets/FB.png" id="FB" alt="Fortnite image">
+    <p>
+        Fornite Characters <br />
+        <a href="https://codepen.io/grohit/">ADD YOUR OWN CHARACTER</a>
+    </p>
+    <img src="assets/FB.png" id="FB" alt="Fortnite image" />
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ng-container
+                    *ngIf="authService.isAuthenticated$ | async;
+               else loggedOut"
+                >
+                    <form [formGroup]="newCharacterForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="name">Character Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Deadpool" class="form-control" formControlName="name" [ngClass]="{ 'error' : isInvalid('name') }" />
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Character age:</label>
+                            <select name="age" id="age" class="form-control" formControlName="age">
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="weapon">Character Weapon:</label>
+                            <input type="text" id="weapon" name="weapon" placeholder="Shotgun" class="form-control" formControlName="weapon" [ngClass]="{ 'error' : isInvalid('weapon') }" />
+                        </div>
+                        <div class="form-group">
+                            <label for="victories">Character victories (10 = best)</label>
+                            <select name="victories" id="victories" class="form-control" formControlName="victories">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
 
-           <ng-container
-               *ngIf = "authService.isAuthenticated$ | async;
-               else loggedOut">
+                        <span *ngIf="isIncomplete()" style="margin-left: 510px;">
+                            You must complete all fields
+                        </span>
 
-               <form [formGroup] = "newCharacterForm" (ngSubmit)="onSubmit()">
-                   <div class="form-group">
-                       <label for="name">Character Name:</label>
-                       <input type="text" id="name" name="name"
-                           class="form-control" formControlName="name"
-                           [ngClass]="{ 'error' : isInvalid('name') }">
-                   </div>
-                   <div class="form-group">
-                    <label for="age">Character age:</label>
-                    <select name="age" id="age"
-                            class="form-control" formControlName="age">
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="weapon">Character Weapon:</label>
-                    <input type="text" id="weapon" name="weapon"
-                        class="form-control" formControlName="weapon"
-                        [ngClass]="{ 'error' : isInvalid('weapon') }">
-                </div>
-                   <div class="form-group">
-                       <label for="victories">Character victories (10 = best)</label>
-                       <select name="victories" id="victories"
-                               class="form-control" formControlName="victories">
-                               <option value="1">1</option>
-                               <option value="2">2</option>
-                               <option value="3">3</option>
-                               <option value="4">4</option>
-                               <option value="5">5</option>
-                               <option value="6">6</option>
-                               <option value="7">7</option>
-                               <option value="8">8</option>
-                               <option value="9">9</option>
-                               <option value="10">10</option>
-                       </select>
-                   </div>
+                        <button *ngIf="!isIncomplete()" style="margin-left: 510px;" type="submit" class="btn.btn-primary">Submit</button>
+                    </form>
+                </ng-container>
 
-                   <span *ngIf="isIncomplete()"
-                   style="margin-left: 510px;">
-                       You must complete all fields
-                   </span>
-
-                   <button *ngIf="!isIncomplete()"
-                            click="reloadComponent()"
-                           style="margin-left: 510px;"
-                           type="submit"
-                           class="btn.btn-primary">Submit</button>
-               </form>
-           </ng-container>
-
-           <ng-template #loggedOut>
-               <h2>Please login to add a new character</h2>
-           </ng-template>
-           
+                <ng-template #loggedOut>
+                    <h2>Please login to add a new character</h2>
+                </ng-template>
+            </div>
         </div>
     </div>
 </div>
