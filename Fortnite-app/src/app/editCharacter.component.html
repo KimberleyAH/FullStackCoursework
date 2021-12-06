@@ -7,8 +7,10 @@
            <ng-container
                *ngIf = "authService.isAuthenticated$ | async;
                else loggedOut">
-            <h2>Edit this character!</h2>
-               <form [formGroup] = "editCharacterForm" (ngSubmit)="onSubmit()">
+               <div class="context" style="margin-top: auto;">
+                <p><a href="https://codepen.io/grohit/">Edit this character!</a></p>
+            </div>               
+            <form [formGroup] = "editCharacterForm" (ngSubmit)="onSubmit()">
                    <div class="form-group">
                        <label for="name">Edit Character Name:</label>
                        <input type="text" id="name" name="name"

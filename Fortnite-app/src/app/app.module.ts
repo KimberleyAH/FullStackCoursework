@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxPaginationModule } from 'ngx-pagination'; //import module pagination
 
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters.component';
@@ -14,7 +15,7 @@ import { newCharacterComponent } from './newCharacter.component';
 //import { deleteRankComponent } from './deleteRank.component';
 import { editCharacterComponent } from './editCharacter.component';
 import { editRankComponent } from './editRank.component';
-
+// import { testPagination } from './testPagination.component';
 //import module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
 
@@ -42,7 +43,11 @@ var routes: any = [
   {
     path: 'characters/:char_id/editRank/:rank_id',
     component: editRankComponent
-  }
+  },
+  // {
+  //   path: 'characters/:id',
+  //   component: testPagination 
+  // }
   // {
   //   path: 'rank/:id',
   //   component: CharactersComponent
@@ -62,11 +67,13 @@ var routes: any = [
     NavComponent,
     newCharacterComponent,
     editCharacterComponent,
-    editRankComponent
+    editRankComponent,
+    // testPagination
    // deleteRankComponent
   ],
   imports: [
     BrowserModule,
+    NgxPaginationModule,
     HttpClientModule,
     RouterModule.forRoot(routes), 
     ReactiveFormsModule, 

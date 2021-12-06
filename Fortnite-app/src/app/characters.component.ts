@@ -20,6 +20,15 @@ export class CharactersComponent {
     this.character_list = this.webService.getCharacters(this.page);
   }
 
+  // firstPage() {
+  //   if (this.page > 14) {
+  //     this.page = this.page -13;
+  //     sessionStorage['page'] = this.page;
+  //     this.character_list = this.webService.getCharacters(this.page);
+  //   }
+  // }
+  
+
   previousPage() {
     if (this.page > 1) {
       this.page = this.page -1;
@@ -34,11 +43,15 @@ export class CharactersComponent {
     this.character_list = this.webService.getCharacters(this.page);
   }
 
-  lastPage() {
-    this.page = this.page - 1;
-    sessionStorage['page'] = this.page;
-    this.character_list = this.webService.getCharacters(this.page);
-  }
+  // lastPage() {
+  //   if (this.page >= 1) {
+  //     this.page = this.page +14;
+  //     sessionStorage['page'] = this.page;
+  //     this.character_list = this.webService.getCharacters(this.page);
+  //   }
+  // }
+  
+
 
    
 
