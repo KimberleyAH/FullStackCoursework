@@ -63,20 +63,22 @@ export class CharacterComponent {
       this.webService.deleteCharacter(this.route.snapshot.params['id'])
       .subscribe();
     }
-//changing
     deleteRank(rank_id: any) {
       this.webService.deleteRank(this.route.snapshot.params['id'], rank_id)
       .subscribe();
       }
 
-
+// https://stackoverflow.com/questions/47010159/how-to-redirect-to-a-new-page-in-angular-4-through-button-click
     goToPage(pageName:string){     
       this.router.navigate([`${pageName}`]);   
     }
 
-    refreshPage(){     
-      window.location.reload();   
-    }
+    reloadComponent() {
+      let currentUrl = this.router.url;
+          this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+          this.router.onSameUrlNavigation = 'reload';
+          this.router.navigate([currentUrl]);
+      }
 
     
 

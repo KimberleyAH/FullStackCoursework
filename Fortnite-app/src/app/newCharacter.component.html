@@ -56,14 +56,16 @@
                        </select>
                    </div>
 
-                   <span *ngIf="isIncomplete()">
+                   <span *ngIf="isIncomplete()"
+                   style="margin-left: 510px;">
                        You must complete all fields
                    </span>
 
                    <button *ngIf="!isIncomplete()"
+                            click="reloadComponent()"
+                           style="margin-left: 510px;"
                            type="submit"
-                           class="btn.btn-primary">Submit
-                        </button>
+                           class="btn.btn-primary">Submit</button>
                </form>
            </ng-container>
 

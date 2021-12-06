@@ -1,3 +1,6 @@
+<img src="assets/CE.jpg" id="FE" alt="Fortnite image">
+
+
 <div class="container" style="margin-top: 70px;">
     <div class="row">
        <div class="col-sm-12">
@@ -9,22 +12,24 @@
                *ngIf = "authService.isAuthenticated$ | async;
                else loggedOut">
 
-               <h2> Edit this character's rank</h2>
-               <form [formGroup] = "editRankForm" (ngSubmit)="onSubmit()">
+               <div class="context" style="margin-top: auto;">
+                <p><a href="https://codepen.io/grohit/">Edit this rank!</a></p>
+            </div>                
+            <form [formGroup] = "editRankForm" (ngSubmit)="onSubmit()">
                    <div class="form-group">
-                       <label for="username">Edit Name:</label>
+                       <label for="username">Name:</label>
                        <input type="text" id="username" name="username"
                            class="form-control" formControlName="username"
-                           [ngClass]="{ 'error' : isInvalid('user#name') }">
+                           [ngClass]="{ 'error' : isInvalid('username') }">
                    </div>
                    <div class="form-group">
-                       <label for="comment">Edit comment:</label>
+                       <label for="comment">Edit your comment:</label>
                        <textarea name="comment" id="comment" rows="3"
                                class="form-control" formControlName="comment"
                                [ngClass]="{ 'error' : isInvalid('comment') }"></textarea>
                    </div>
                    <div class="form-group">
-                       <label for="rank">Edit (10 = best)</label>
+                       <label for="rank">Edit rank for this character (10 = best)</label>
                        <select name="rank" id="rank"
                                class="form-control" formControlName="rank">
                                <option value="1">1</option>
@@ -40,22 +45,22 @@
                        </select>
                    </div>
 
-                   <span *ngIf="isIncomplete()">
+                   <span *ngIf="isIncomplete()"
+                   style="margin-left: 805px;">
                        You must complete all fields
                    </span>
 
                    <button *ngIf="!isIncomplete()"
+                           style="margin-left: 805px;"
                            type="submit"
                            class="btn.btn-primary">Submit</button>
                </form>
            </ng-container>
 
            <ng-template #loggedOut>
-               <h2>Please login to edit this character's rank</h2>
+               <h2>Please login to rank this character</h2>
            </ng-template>
            
         </div>
     </div>
 </div>
-
-

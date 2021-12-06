@@ -35,6 +35,10 @@
     /* Preserve aspet ratio */
     min-width: 100%;
     min-height: 100%;
+    background-size: cover;
+    background-color: #464646;
+    background-position: center center;
+    background-attachment: fixed;
   }
  
   
